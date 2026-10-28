@@ -4,7 +4,8 @@
 
 A beginner manual on using AI for small-business bookkeeping, published by
 Asdale Dynamics, LLC (Indiana, formed October 2026). Education only — not tax
-advice.
+advice. Written in the spirit of Dylan Asdale's *The Massive AI Manual* and
+dylanasdale.github.io: plain English, step by step, never condescending.
 
 **Manual (`docs/`)** — 11 Markdown files:
 - `00-read-me-first.md` — education-only disclaimer, privacy checklist, how to use
@@ -17,17 +18,17 @@ advice.
 - `docs/worksheets/` — Income Log, Monthly Expense Tracker, Receipt Log, Quarterly Tax Prep Checklist
 
 **Static site (`site/`)** — 12 HTML files plus shared `css/style.css` and `js/app.js`:
-- `index.html` — home with chapter index and how to use
+- `index.html` — home with chapter index, warmer intro, how to use
 - `basics.html`, `income.html`, `expenses.html`, `receipts.html`, `quarterly-taxes.html`, `hire-pro.html`
 - `worksheets/index.html` + four printable worksheet pages with `@media print` styles and print buttons
 
 **Other files:** `LICENSE` (MIT, copyright line exactly
 `Copyright (c) 2026 Asdale Dynamics, LLC`), `README.md` (credits Asdale
-Dynamics, LLC), `STATUS.md` (this file).
+Dynamics, LLC and Dylan Asdale context), `STATUS.md` (this file).
 
 ## How to run it
 
-No build step, no server, no installation:
+No build step, no server, no installation, no accounts:
 
 1. Open `site/index.html` in any web browser.
 2. Navigate chapters from the menu. Worksheet pages have a Print button;
@@ -39,12 +40,13 @@ No build step, no server, no installation:
 - Custom verification script (`/tmp/kilo/verify_guide.py`, not part of the repo):
   - 12 HTML files all parse; 11 Markdown files present
   - All internal `href`/`src` links resolve (no broken links)
-  - `LICENSE` contains the exact copyright line
+  - `LICENSE` line 3 contains exactly `Copyright (c) 2026 Asdale Dynamics, LLC`
   - `README.md` credits Asdale Dynamics, LLC
-  - No `.github/` directory; no secret/key patterns found in files
+  - No `.github/` directory; no secret/key patterns found in any file
 - Print CSS present (`@media print` in `site/css/style.css`): hides nav,
   footer, and print buttons; keeps worksheet tables readable on paper
 - Site is static HTML/CSS/JS; opens in a browser without a build step
+- All checks passed on the final file set
 
 ## Known gaps
 
