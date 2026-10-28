@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2. Tracking Income — Asdale Dynamics, LLC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-brand">Asdale Dynamics, LLC <span>·</span> AI for Small-Business Bookkeeping</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="basics.html">1. AI bookkeeping basics</a>
+      <a href="income.html" class="active">2. Tracking income</a>
+      <a href="expenses.html">3. Categorizing expenses</a>
+      <a href="receipts.html">4. Receipts</a>
+      <a href="quarterly-taxes.html">5. Quarterly tax prep</a>
+      <a href="hire-pro.html">6. When to hire a pro</a>
+      <a href="worksheets/index.html">Worksheets</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="chapter">
+    <h2>2. Tracking Income</h2>
+    <p>Income is every dollar your business receives. Tracking it means
+    recording each payment, where it came from, and when it arrived. Good
+    income records protect you if the IRS ever asks, and they make quarterly
+    tax prep much easier.</p>
+
+    <h3>Record every payment, even small ones</h3>
+    <p>If you sell a $12 book, record the $12. Do not wait until the end of the
+    year and try to remember. Common income sources for small businesses:</p>
+    <ul>
+      <li>Client payments (check, Venmo, PayPal, Stripe, bank transfer)</li>
+      <li>Book royalties (KDP, other publishers)</li>
+      <li>Reselling sales (eBay, Amazon, Poshmark, local markets)</li>
+      <li>Affiliate or referral commissions</li>
+      <li>Tips or gratuities related to the business</li>
+    </ul>
+
+    <h3>What to write down for each payment</h3>
+    <table>
+      <thead>
+        <tr><th>Field</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Date</td><td>2026-03-14</td></tr>
+        <tr><td>Customer or source</td><td>"Client A — blog post"</td></tr>
+        <tr><td>Description</td><td>"Freelance writing: 4 articles"</td></tr>
+        <tr><td>Amount</td><td>$400.00</td></tr>
+        <tr><td>Payment method</td><td>PayPal</td></tr>
+        <tr><td>Invoice number (if any)</td><td>INV-104</td></tr>
+        <tr><td>Deposited to</td><td>"Business checking"</td></tr>
+        <tr><td>Notes</td><td>"Net of PayPal fees"</td></tr>
+      </tbody>
+    </table>
+    <p>Use one row per payment. Do not lump a whole month into one line.</p>
+
+    <h3>Separate business and personal money</h3>
+    <p>Open a separate bank account for your business if you can. Never pay
+    personal grocery bills from the business account, and do not deposit
+    customer checks into your personal account. Mixing money makes
+    bookkeeping harder and can erase legal protections for an LLC.</p>
+
+    <h3>Handling fees</h3>
+    <p>Payment platforms often take a fee. Record the <strong>gross</strong>
+    amount the customer paid as income, and record the fee as an expense (for
+    example, "Payment processing fees"). Do not record only what landed in your
+    bank account.</p>
+
+    <h3>Income worksheet</h3>
+    <p>Use the Income Log worksheet
+    (<a href="worksheets/income-log.html">site/worksheets/income-log.html</a>,
+    or <code>docs/worksheets/worksheet-income-log.md</code>) to record payments
+    by hand or in a spreadsheet. Print one per month.</p>
+
+    <div class="prompt">
+      <div class="prompt-title">Prompt — Sort raw payment notes into an income log</div>
+      <pre>I am keeping my own small-business records. Below are my notes about payments
+I received this month. Turn them into a table with these columns:
+Date | Customer or source | Description | Amount | Payment method | Notes.
+
+If any amount looks like it might be personal money rather than business
+income, flag it with [PERSONAL?]. Do not give tax advice.
+
+My notes:
+...</pre>
+    </div>
+
+    <div class="prompt">
+      <div class="prompt-title">Prompt — Match deposits to income records</div>
+      <pre>Here is my bank deposit list and my income log for the month. Tell me which
+deposits have a matching income-log row and which deposits do not, so I can
+find missing records. Do not give tax advice.
+
+Deposits:
+...
+Income log:
+...</pre>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Asdale Dynamics, LLC. Education only — not tax, accounting, legal,
+  or financial advice. Consult a qualified tax professional for your specific
+  situation.</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

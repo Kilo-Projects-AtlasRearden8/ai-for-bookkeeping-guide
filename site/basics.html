@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1. AI Bookkeeping Basics — Asdale Dynamics, LLC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-brand">Asdale Dynamics, LLC <span>·</span> AI for Small-Business Bookkeeping</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="basics.html" class="active">1. AI bookkeeping basics</a>
+      <a href="income.html">2. Tracking income</a>
+      <a href="expenses.html">3. Categorizing expenses</a>
+      <a href="receipts.html">4. Receipts</a>
+      <a href="quarterly-taxes.html">5. Quarterly tax prep</a>
+      <a href="hire-pro.html">6. When to hire a pro</a>
+      <a href="worksheets/index.html">Worksheets</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="chapter">
+    <h2>1. AI Bookkeeping Basics</h2>
+    <p>Bookkeeping is just the habit of writing down what your business earns
+    and what it spends. AI can help you do it faster, but it does not replace
+    the habit itself. Think of AI as a careful assistant who can sort a messy
+    pile of receipts, draft categories, and remind you of deadlines — but you
+    are still the bookkeeper in charge.</p>
+
+    <h3>What AI can help with</h3>
+    <ul>
+      <li>Turning a list of messy bank descriptions into clean categories</li>
+      <li>Drafting income and expense records from notes or receipts</li>
+      <li>Answering questions like "What counts as a home office expense?"</li>
+      <li>Building spreadsheets and checklists you can print</li>
+      <li>Reminding you of quarterly tax deadlines</li>
+    </ul>
+
+    <h3>What AI should not do</h3>
+    <ul>
+      <li>File your tax return for you</li>
+      <li>Decide what you can deduct without you checking</li>
+      <li>Handle your bank logins or move money</li>
+      <li>Give you final answers about your specific tax situation</li>
+    </ul>
+
+    <h3>Pick your tools</h3>
+    <p>You do not need expensive software to start. A spreadsheet (Google
+    Sheets, Excel, or LibreOffice Calc) plus a notebook works fine. AI tools
+    can be a general AI assistant you chat with, a spreadsheet with AI features
+    built in, or receipt-scanning apps that read text from photos. Choose tools
+    that let you export your data (CSV or Excel), so you are never locked into
+    one app.</p>
+
+    <h3>Privacy checklist for financial AI</h3>
+    <p>Do this before you paste anything into an AI tool:</p>
+    <ul>
+      <li>Remove real bank account numbers and routing numbers</li>
+      <li>Remove Social Security numbers and taxpayer ID numbers</li>
+      <li>Remove customer names, addresses, and credit card numbers</li>
+      <li>Use generic descriptions ("Client A," "Office supply store")</li>
+      <li>Keep your master spreadsheet on your own computer or drive</li>
+      <li>Read the AI tool's privacy policy: does it train on your data?</li>
+    </ul>
+    <p>If you are unsure, keep the data offline and type only fake examples
+    into the AI.</p>
+
+    <h3>Simple workflow you can repeat every week</h3>
+    <ol>
+      <li><strong>Gather</strong> — Pull your bank and payment-app transactions for the week.</li>
+      <li><strong>Record</strong> — Enter income and expenses in your spreadsheet.</li>
+      <li><strong>Sort</strong> — Use AI to suggest categories for anything unclear.</li>
+      <li><strong>File</strong> — Save receipts (paper or scan) by month.</li>
+      <li><strong>Review</strong> — Spend 15 minutes checking that everything looks right.</li>
+    </ol>
+    <p>Doing a little every week keeps quarterly tax prep from becoming a
+    crisis.</p>
+
+    <div class="prompt">
+      <div class="prompt-title">Prompt 1 — Clean up a transaction list</div>
+      <pre>I am keeping my own small-business bookkeeping records. Below is a list of
+bank transactions with messy descriptions. For each one, suggest:
+1) a clean plain-English description, and
+2) an expense category (use common Schedule C categories like Advertising,
+Office expenses, Supplies, Rent, Utilities, Meals, Travel, etc.).
+
+Mark anything you are unsure about with [?]. Do not give tax advice.
+
+Paste transactions here:
+...</pre>
+    </div>
+
+    <div class="prompt">
+      <div class="prompt-title">Prompt 2 — Ask whether something is likely deductible</div>
+      <pre>I run a [type of business, e.g. freelance writing / reselling / consulting].
+I spent $[amount] on [describe item]. Based on general IRS Publication 535
+guidance for ordinary and necessary business expenses, what questions should I
+ask my tax professional before I deduct this? Do not tell me whether to deduct
+it.
+
+Education only — I will verify with a CPA or enrolled agent.</pre>
+    </div>
+
+    <div class="prompt">
+      <div class="prompt-title">Prompt 3 — Build a monthly summary</div>
+      <pre>I will paste my income and expense totals for the month. Create a simple
+summary table with total income, total expenses, and net profit. Then list the
+top three expense categories by dollar amount. Keep it in plain English.
+
+Education only — not tax advice.
+...</pre>
+    </div>
+
+    <div class="keyterms">
+      <h3>Key terms in plain English</h3>
+      <dl>
+        <dt>Income</dt>
+        <dd>Money your business receives.</dd>
+        <dt>Expense</dt>
+        <dd>Money your business spends to operate.</dd>
+        <dt>Category</dt>
+        <dd>A label for a type of spending (for example, "Office supplies").</dd>
+        <dt>Deduction</dt>
+        <dd>An expense the tax rules let you subtract from income before calculating tax.</dd>
+        <dt>Net profit</dt>
+        <dd>Income minus expenses.</dd>
+        <dt>Estimated tax</dt>
+        <dd>Tax you pay to the IRS four times a year instead of all at once (Chapter 5).</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Asdale Dynamics, LLC. Education only — not tax, accounting, legal,
+  or financial advice. Consult a qualified tax professional for your specific
+  situation.</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

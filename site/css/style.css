@@ -1,0 +1,394 @@
+/* Asdale Dynamics, LLC — AI for Small-Business Bookkeeping site styles */
+
+/* ---------- Base ---------- */
+html {
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+/* ---------- Header / nav ---------- */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-brand {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #111827;
+  text-decoration: none;
+}
+
+.site-brand span {
+  color: #1d4ed8;
+}
+
+.site-nav {
+  display: none;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.site-nav a {
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.site-nav a:hover, .site-nav a.active {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #111827;
+}
+
+.menu-button:hover {
+  border-color: #9ca3af;
+}
+
+.menu-open .site-nav {
+  display: flex;
+}
+
+/* ---------- Main ---------- */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.hero {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.6rem;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem;
+  color: #111827;
+}
+
+.hero p {
+  margin: 0 0 1rem;
+  color: #4b5563;
+}
+
+.disclaimer {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.disclaimer strong {
+  color: #92400e;
+}
+
+/* ---------- Chapter pages ---------- */
+.chapter {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.6rem;
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chapter h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #111827;
+}
+
+.chapter h3 {
+  font-size: 1.15rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #111827;
+}
+
+.chapter p, .chapter li {
+  font-size: 0.95rem;
+}
+
+.chapter p {
+  margin: 0 0 1rem;
+}
+
+.chapter ul, .chapter ol {
+  margin: 0 0 1rem 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.chapter li {
+  margin-bottom: 0.4rem;
+}
+
+.chapter table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.chapter th, .chapter td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+}
+
+.chapter th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.chapter tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+.prompt {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.prompt pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    monospace;
+  font-size: 0.85rem;
+}
+
+.prompt-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #1e40af;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.keyterms {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.keyterms h3 {
+  margin-top: 0;
+}
+
+.keyterms dl {
+  margin: 0;
+  padding-left: 0;
+}
+
+.keyterms dt {
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+
+.keyterms dd {
+  margin: 0.15rem 0 0 0.9rem;
+}
+
+/* ---------- Worksheets ---------- */
+.worksheet h1 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.worksheet .meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.worksheet .meta label {
+  font-weight: 700;
+  color: #111827;
+}
+
+.worksheet table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.worksheet th {
+  background: #e5e7eb;
+  border: 1px solid #9ca3af;
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.worksheet td {
+  border: 1px solid #9ca3af;
+  padding: 0.5rem 0.6rem;
+  height: 2.2rem;
+}
+
+.worksheet td.blank {
+  height: 1.9rem;
+}
+
+.totals {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.total-box {
+  border: 1px solid #374151;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.tips {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.tips ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.25rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 1.5rem 1.25rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-top: 1rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+/* ---------- Print ---------- */
+@media print {
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    background: #ffffff;
+    color: #000;
+  }
+  .site-header, .menu-button, .site-footer, .no-print {
+    display: none !important;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .chapter, .worksheet {
+    border: none;
+    padding: 0;
+    margin: 0;
+    break-inside: avoid;
+  }
+  .chapter h2, .worksheet h1 {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+  .prompt {
+    background: #ffffff;
+    border: 1px solid #000;
+  }
+  table {
+    break-inside: auto;
+  }
+  tr {
+    break-inside: avoid;
+  }
+  .worksheet td {
+    border-color: #000;
+    background: #ffffff !important;
+  }
+  .total-box {
+    border: 1px solid #000;
+  }
+  @page {
+    margin: 1.5cm;
+  }
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  .chapter h2 {
+    font-size: 1.3rem;
+  }
+  main {
+    padding: 1rem 0.75rem 3rem;
+  }
+  .chapter {
+    padding: 1.25rem 1rem;
+  }
+}

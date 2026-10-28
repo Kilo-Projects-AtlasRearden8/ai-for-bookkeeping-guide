@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4. Receipts — Asdale Dynamics, LLC</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-brand">Asdale Dynamics, LLC <span>·</span> AI for Small-Business Bookkeeping</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="basics.html">1. AI bookkeeping basics</a>
+      <a href="income.html">2. Tracking income</a>
+      <a href="expenses.html">3. Categorizing expenses</a>
+      <a href="receipts.html" class="active">4. Receipts</a>
+      <a href="quarterly-taxes.html">5. Quarterly tax prep</a>
+      <a href="hire-pro.html">6. When to hire a pro</a>
+      <a href="worksheets/index.html">Worksheets</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="chapter">
+    <h2>4. Receipts</h2>
+    <p>A receipt is proof that you spent money. If the IRS ever asks about a
+    deduction, your bank statement alone may not be enough — you usually need
+    the receipt or invoice too.</p>
+
+    <h3>What to keep</h3>
+    <p>Keep receipts and invoices for:</p>
+    <ul>
+      <li>Anything you plan to deduct as a business expense</li>
+      <li>Equipment and supplies</li>
+      <li>Meals and travel you claim for business</li>
+      <li>Home office purchases</li>
+      <li>Anything over a small amount (your tax pro can suggest a threshold)</li>
+    </ul>
+    <p>You generally do not need to keep receipts for tiny everyday cash
+    purchases that you do not claim, but when in doubt, keep it.</p>
+
+    <h3>How to store receipts</h3>
+    <p>Choose one system and use it all year:</p>
+    <ul>
+      <li><strong>Paper</strong> — Folders or envelopes labeled by month. Simple and works during power outages.</li>
+      <li><strong>Photos/scans</strong> — Take a photo of each receipt right away, before it fades. Name files like <code>2026-03-14_Staples_office-supplies.jpg</code> so you can find them later.</li>
+      <li><strong>Digital</strong> — If you receive email receipts, save them to a folder (do not leave them only in your inbox).</li>
+    </ul>
+    <p>Back up digital receipts to your own computer or drive. Do not keep your
+    only copy in an app that could shut down or change its terms.</p>
+
+    <h3>Retention: how long to keep them</h3>
+    <p>A common rule of thumb is to keep tax records for at least
+    <strong>three years</strong> from the date you file your return, and longer
+    if you claim certain things (for example, assets you depreciate). Ask your
+    tax professional how long to keep records for your situation, and check
+    IRS.gov.</p>
+
+    <h3>AI and receipts</h3>
+    <p>AI can read a photo or PDF of a receipt and turn it into a line for your
+    spreadsheet: date, store, total, category. Use it as a first draft, then
+    check the numbers against the image.</p>
+
+    <div class="prompt">
+      <div class="prompt-title">Prompt — Read a receipt</div>
+      <pre>I pasted text from a receipt below (OCR output). Turn it into one row for my
+expense spreadsheet: Date | Store | Description | Total | Payment method |
+Suggested category. If the OCR is garbled, say so instead of guessing.
+
+Education only — not tax advice.
+
+Receipt text:
+...</pre>
+    </div>
+    <p>Never paste receipts that show customer credit card numbers or your own
+    bank account numbers into a public AI tool (see the privacy checklist in
+    Chapter 1).</p>
+
+    <h3>Receipt worksheet</h3>
+    <p>Use the Receipt Log worksheet
+    (<a href="worksheets/receipt-log.html">site/worksheets/receipt-log.html</a>,
+    or <code>docs/worksheets/worksheet-receipt-log.md</code>). It helps you log
+    each receipt you file so nothing gets lost.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Asdale Dynamics, LLC. Education only — not tax, accounting, legal,
+  or financial advice. Consult a qualified tax professional for your specific
+  situation.</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
